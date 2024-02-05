@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #61892f 21.43%,
+    #61892f 50.63%,
+    #61892f 100%,
+    #61892f 117.04%
+  );
+
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #474b4f 21.43%,
+    #474b4f 50.63%,
+    #474b4f 100%,
+    #474b4f 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #474b4f 21.43%,
+    #474b4f 50.63%,
+    #474b4f 100%,
+    #474b4f 117.04%
+  );
+}
+
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.tech-icons {
+  font-size: 6em ;
+  margin: 10px ;
+  border: 1.7px solid #474b4f;
+  padding: 6px;
+  opacity: 0.93 ;
+  vertical-align: middle ;
+  text-align: center ;
+  border-radius: 5px ;
+  display: table ;
+  box-shadow: 4px 5px 4px 3px #404447 ;
+  overflow: hidden ;
+  transition: all 0.4s ease 0s ;
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) ;
+  overflow: hidden ;
+  border: 2.2px solid #2e3031;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  .card {
+    @apply rounded-xl shadow-lg;
+  }
+}
+
